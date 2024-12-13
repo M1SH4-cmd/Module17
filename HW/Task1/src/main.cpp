@@ -3,9 +3,8 @@ using namespace std;
 
 void swapNums(int* a, int* b){
     int buffer = *a;
-    a = b;
-    b = &buffer;
-    cout << "a:\t" << *a << endl << "b:\t" << *b << "\0";
+    *a = *b;
+    *b = buffer;
 }
 
 
@@ -15,5 +14,6 @@ int main(){
     int b = 20;
 
     swapNums(&a, &b);
+    cout << "a:\t" << a << endl << "b:\t" << b << "\0";
 
 }
