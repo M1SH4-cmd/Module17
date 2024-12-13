@@ -32,9 +32,9 @@ bool substr(const char* str1, const char* str2){
 }
 
 int main(){
-    const char* a = "Hello world";
-    const char* b = "wor";
-    const char* c = "banana";
+    const char* a = "Volkswagen, Das Auto";
+    const char* b = "Parkplatz";
+    const char* c = "Das Auto";
 
     cout << substr(a, b) << " " << substr(a, c) << endl;
     return 0;
